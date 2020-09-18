@@ -34,7 +34,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
 
 /* TYPOGRAPHIC SCALE */
@@ -94,4 +94,38 @@ hr {
 }
 .button:hover {
   background-color: #a8727b;
+}
+
+/* RESPONSIVE IMAGES*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* BODY RESET*/
+body {
+  margin: 0;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*MEDIA QUERES*/
+/* RESPONSIVE-TYPE*/
+body {
+  font-size: 87.5%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1050px) {
+  body {
+    font-size: 100.5%;
+  }
 }
