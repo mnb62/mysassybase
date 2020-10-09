@@ -19,6 +19,12 @@ CSS TABLE OF CONTENTS
     #CONTAINER
     #MEDIA QUERES
     #CUSTOME SEMANTIC GRID SYSTEM
+#STRUCTURE
+    #SITE HEADER
+    #SITE NAV
+    #MAIN
+        #SECTIONS
+    #SITE FOOTER
 
 ------------------------- */
 /* BASE COLORS */
@@ -45,7 +51,7 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 0.5em 0;
 }
 
@@ -84,7 +90,7 @@ hr {
   font-weight: normal;
   line-height: 1;
   margin: 0;
-  color: pink;
+  color: #6287ff;
 }
 
 .subheadline {
@@ -98,14 +104,14 @@ hr {
 /* BUTTONS*/
 .button {
   display: inline-block;
-  background-color: pink;
+  background-color: #6287ff;
   color: #fff;
   text-decoration: none;
   padding: 1em;
   border-radius: 5px;
 }
 .button:hover {
-  background-color: #a8727b;
+  background-color: #45599c;
 }
 
 /* RESPONSIVE IMAGES*/
@@ -164,6 +170,9 @@ body {
 .row.stacked {
   flex-direction: column;
 }
+.row.align-top {
+  align-items: flex-start;
+}
 @media (min-width: 768px) {
   .row .one-half {
     width: 46%;
@@ -204,4 +213,76 @@ body {
 .demo .row > * {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1%;
+}
+
+/* SITE STRUCTURE */
+.site-header {
+  background: #45599c;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header a {
+  color: white;
+  text-decoration: none;
+}
+.site-header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/*SITE FOOTER*/
+.site-footer {
+  background: #45599c;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*SITE NAV*/
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-nav a {
+  display: inline-block;
+  padding: 1em;
+}
+
+section {
+  padding: 4em 0;
+}
+
+/*HERO*/
+.site-hero {
+  background: #b9caff;
+  text-align: center;
+  padding: 6em 0;
+}
+.site-hero h1 {
+  margin-bottom: 0.25em;
+}
+.site-hero p {
+  margin: 1em auto;
+}
+
+/*SECTION HEADING*/
+.section-heading {
+  font-size: 1em;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 5px solid #6287ff;
+  display: table;
+  padding: 0 0 0.5em 0;
+  margin: 1em auto 3em auto;
 }

@@ -16,15 +16,11 @@ $gridgap: 2%;
         flex-grow: 0;
     }
 
-    &.centered {
-        justify-content: center;
-    }
-    &.swapped {
-        flex-direction: row-reverse;
-    }
-    &.stacked {
-        flex-direction: column;
-    }
+    &.centered {justify-content: center;}
+    &.swapped {flex-direction: row-reverse;}
+    &.stacked { flex-direction: column;}
+    &.align-top { align-items: flex-start;}
+
     @media (min-width: $breakpoint-small) {
         .one-half { width: 48% - $gridgap;}
         .one-whole { width: 100% - $gridgap;}
